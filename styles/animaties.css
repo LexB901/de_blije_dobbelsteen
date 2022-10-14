@@ -1,0 +1,100 @@
+/*Dobbosteen animatie BEGIN-------------------------------------------------------------------------------------------------------------------*/
+@-webkit-keyframes vrachtwagen {
+  from {transform: rotate(0deg);}
+  from {transform: rotate(360deg);}
+  }
+@keyframes vrachtwagen {
+  from {transform: rotate(0deg);}
+  from {transform: rotate(360deg);}
+  }
+  @-webkit-keyframes scooter {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+    }
+  @-moz-keyframes scooter {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+  }
+  @-o-keyframes scooter {
+      from {transform: scale(0);}
+        to {transform: scale(1);}
+        }
+  @keyframes scooter {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+  }
+
+.logodobbelsteen {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  animation: vrachtwagen 0.6s;
+}
+.logodobbelsteen img {
+      width: 90px;
+}
+   .logodobbelsteen div {
+       height: 90px;
+       width: 90px;
+       position: absolute;
+       transition: 0.4s;
+       background-image: url(../images/dobbelsteen.png);
+       background-size: cover;
+   }
+  .logodobbelsteen:hover div{
+    transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    background-image: url(../images/dobbelsteen\ -\ kopie.png);
+    
+  }
+  /*Dobbosteen animatie EIND*/
+  /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*navbar animatie BEGIN*/
+.navknop {
+    color: white;
+    transition: 0.5s;
+    -webkit-animation: scooter 0.7s;
+    -moz-animation: scooter 0.7s;
+    -o-animation: scooter 0.7s;
+    animation: scooter 0.7s;
+    overflow: hidden;
+}
+.navknop:hover {
+    color: rgb(230, 230, 230);
+}
+/*.navknop:hover {
+    color: rgb(212, 212, 212);
+    transition: 0.3;
+}*/
+.navknop:after {
+  backface-visibility: hidden;
+  border: 1px solid rgba(206, 206, 206, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.navknop:hover:after {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+/* Menu button styling */
+.menu-btn {
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;    
+}
+
+
+
+    /*navbar animatie EIND------------------------------------------------------------------------------------------------------------------------------------------*/

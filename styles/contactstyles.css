@@ -1,0 +1,116 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+main .meisjes{
+    height: 25vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.banner>div {
+    height: 25vh;
+}
+
+.ondermain {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    column-gap: 10px;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45vh;
+    display: grid;
+    grid-template-columns: 36% 36%;
+    grid-template-rows: auto auto auto;
+    
+}
+#naam {
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    box-shadow: none;
+    border-bottom: #4F5D73 2.5px solid;
+    grid-column: 1;
+    grid-row: 1;
+}
+#mail {
+    box-shadow: none;
+    font-size: 20px;
+    border: none;
+    border-bottom: #4F5D73 2.5px solid;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+#textarea {
+    max-width: 100%;
+    min-width: 100%;
+    box-shadow: none;
+    height: 100px;
+    max-height: 200px;
+    font-size: 20px;
+    border: none;
+    border-bottom: #4F5D73 2.5px solid;
+    
+}
+.textarea {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+.submit {
+    justify-self: end;
+    grid-column: 2;
+    position: relative;
+    top: -50px;
+}
+input[type=submit] {
+    cursor: pointer;
+    color: white;
+    box-shadow:none ;
+    font-size: 18px;
+    border: none;
+    padding: 11px 35px 11px 35px;
+    background-color: #4F5D73;
+    transition: .3s;
+}
+input[type=submit]:hover {
+    background-color: #595e66;
+}
+input, label {
+    display: block;
+}
+input:indeterminate
+input:invalid {
+    border-bottom: red solid 2.5px !important;
+}
+.input label {
+    color: #4F5D73;
+    opacity: 0;
+    bottom: 45px;
+    position: relative;
+    transition: .3s;
+}
+.textarea label {
+    color: #4F5D73;
+    opacity: 0;
+    bottom: 275px;
+    position: relative;
+    transition: .3s;
+}
+textarea:focus + label {
+    opacity: 1;
+}
+input:focus + label {
+    opacity: 1;
+    
+}
+footer {
+    position: relative;
+}

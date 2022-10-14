@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"content="text/html;charset=UTF-8">
+    <title>De Blije Dobbelsteen</title>
+    <link rel="stylesheet" href="styles/homestyles.css">
+    <link rel="stylesheet" href="styles/animaties.css">
+    <link rel="stylesheet" href="styles/lingostyles.css">
+    <link rel="stylesheet" href="styles/hamburgerstyle.css">
+    <script src="script/cookies.js"></script> 
+    <link rel="icon" href="images/blije_dobbelsteen_logo.png" type="image/icon type">
+    <link rel="stylesheet" href="styles/hamburgerstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div onclick="menu()" id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+            <div class="navbar" id="navbar">
+                <a class="navknop" href="index.html">Home<br></a>
+                <a class="navknop" href="about.html">Wie zijn wij</a>
+                <a class="logodobbelsteen" href="">
+                    <div></div>
+                    <img src="images/dobbelsteen_achtergrond.png" alt="">
+                </a>
+                <a class="navknop" href="rules.html">Spelregels</a>
+                <a class="navknop" href="contact.html">Contact</a>
+            </div>
+        </header>
+             
+        <div class="banner">
+            <div class="text2">
+                <img src="images/lingo.png">
+            </div>
+        </div>
+        <div class="sorry">
+            <h1>Sorry!</h1><br>
+            <p>Deze game kan alleen gespeeld worden op grote apparaten zoals computers of sommige tablets.</p>
+        </div>
+            <div id="msgBox"></div>
+                <div class="game" id="smallMsg">Rood = goede plek, Geel = verkeerde plek</div>
+                    <div id="container" class="game">
+                            <div id="row1">
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                            </div>
+                            <div id="row2">
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                            </div>
+                            <div id="row3">
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                            </div>
+                            <div id="row4">
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                            </div>
+                            <div id="row5">
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                                <div class="square default"></div>
+                            </div>
+                        </div>
+                    <input class="game" id="guess" onkeypress="submitguess(this)" placeholder='Typ hier jouw woord'>
+                    
+                <button class="game" onClick="window.location.reload();">Speel opnieuw</button>
+                <div id="punten"></div>
+        <footer>
+            <div class="footerinh">
+                <h2>DE BLIJE DOBBELSTEEN</h2>
+                <p>Nederlandse spellenfabriek al meer dan 75 jaar lang!!</p>
+            </div>
+            <div class="footerinh">
+                <h2>BEZOEKADRES</h2>
+                <a target="_blank" href="https://www.google.nl/maps/place/Westfrankelandsestraat+9,+3117+AJ+Schiedam/@51.9154123,4.3913083,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4356bcee42dd5:0x12c14aaaf4a9a111!8m2!3d51.9154123!4d4.393497">Westfrankelandsestraat 9c <br> 3117 AJ Schiedam</a>
+            </div>
+            <div class="footerinh">
+                <h2>POSTADRES</h2>
+                <a target="_blank" href="https://www.google.nl/maps/place/Westfrankelandsestraat+9,+3117+AJ+Schiedam/@51.9154123,4.3913083,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4356bcee42dd5:0x12c14aaaf4a9a111!8m2!3d51.9154123!4d4.393497">Westfrankelandsestraat 9c <br> 3117 AJ Schiedam</a>
+            </div>
+            <div class="footerinh">
+                <h2>CONTACT</h2>
+                <p>T: 010-226 00 94 <br> M: 06-24 48 58 21</p>
+                <a href="mailto:someone@example.com">E: info@deblijedobbelsteen.nl</a>
+            </div>
+    </footer>
+    <script  src="script/hamburgerscript.js"></script>
+    <script src="script/lingoscript.js"></script> 
+</body>
+</html>

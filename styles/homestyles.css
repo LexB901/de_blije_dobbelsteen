@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+/* Navbar styling */
+header {
+    height: 10vh;
+    width: 100%;
+    min-height: 90px;    
+    background-color: #76C2AF;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    justify-content: center;    
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*hamburger menu styling*/
+
+/* End of Navbar styling */
+
+
+
+/* Main styling */
+main img{
+    height: 25vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+main h1 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 35pt;
+}
+main h1 .span {
+    text-align: center;
+}
+main h1 span{
+    font-size: 40px;
+}
+main h1 span {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+}
+.banner>div {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner>div>.text2>img {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ondermain {
+    width: 100%;
+    overflow: hidden;
+}
+.ondermain h1 {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: #4F5D73;
+    position: absolute;
+}
+.spellen{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.ondermain img {
+    height: auto;
+    position: relative;
+    transition: 0.4s;
+}
+.ondermain img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/* End of Main styling */
+
+
+
+/*Footer styling*/
+footer {
+    max-height: 90px;
+    bottom: 0;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 15vh;
+    max-height: 160px;
+    background-color: #76C2AF;
+    font-family: Roboto;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footerinh {
+    width: 200px;
+    height: 93px;
+    position: relative;
+    overflow: hidden;
+}
+.footerinh a {
+    transition: 0.3s;
+    color: white;
+    border-bottom: rgba(255, 255, 255, 0.6) 0.6px solid;
+
+}
+.footerinh a:hover {
+    border-bottom: rgba(255, 255, 255, 1) 0.6px solid;
+
+}
+
+.footerinh p {
+    width: 100%;
+    font-size: 14px;
+
+}
+.sorry {
+    display: none;
+}
+.footer h2 {
+margin-bottom: 4px;
+font-size: 20px;
+}
+/* End of Footer styling */
+/*MEDIA QUERYS*/
+@media only screen and (max-width: 701px) {
+    .ondermain h1 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 790px) {
+    .footerinh:nth-child(1) {
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .footerinh h2 {
+        font-size: 16px;
+    }
+    .footerinh p {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footerinh:nth-child(2) {
+        display: none;
+    }
+    .spellen {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+}
+@media only screen and (max-height: 500px) {
+    .ondermain h1 {
+        margin-top: 0px;
+    }
+    main h1 {
+        font-size: 30pt !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .spellen {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (max-width: 650px) {
+    .ondermain h1 {
+        font-size: 27pt;
+    }
+    .game {
+        display: none !important;
+    }
+    .sorry {
+        
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .sorry h1 {
+        color: #4F5D73;
+        font-size: 25pt;
+    }
+    .sorry h1{
+        position: relative;
+    }
+}
+@media only screen and (max-height: 650px) {
+    .game {
+        display: none !important;
+    }
+    .sorry {
+        
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .sorry h1 {
+        color: #4F5D73;
+        font-size: 25pt;
+    }
+    .sorry h1{
+        position: relative;
+    }
+}
+

@@ -1,0 +1,270 @@
+
+body {
+    width: 100%;
+    height: 100vh;
+
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+main h1{
+    overflow: hidden;
+    color: #4F5D73;
+    font-weight: unset;
+}
+.banner {
+    height: 0vh;
+}
+.text {
+    height: 10vh !important;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.knop {
+    background-color: #76C2AF;
+    border: none;
+    box-shadow: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.knop:hover {
+    background-color: #5eac98;
+}
+.kaart img:hover {
+    transform: scale(1);
+    transform: scale(1);
+    -ms-transform: scaleY(0, 10, 0, 20deg); /* IE 9 */
+    transform: rotate3d(0, 10, 0, 20deg);
+}
+.reset {
+    background-color: rgb(204, 35, 35);
+    border: none;
+    box-shadow: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.reset:hover {
+    background-color: rgb(168, 46, 46);
+}
+
+.rip {
+    background-color: gray !important;
+    border: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.ondermain {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game {
+    position: absolute;
+    width: 700px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+footer {
+    position: absolute;
+    bottom: -120px;
+}
+#memtitel {
+    text-align: center;
+    font-size: 40px;
+    color: #4F5D73;
+}
+#memcontainer {
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    pointer-events: visible;
+    gap: 5px;
+    display: flex;
+    background-color: gray;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    min-width: 700px;
+    min-height: 700px;
+    border-radius: 10px;
+}
+.knoppen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.hidden{
+    transition: 0.5s;
+    opacity: 0;
+}
+.kaart {
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    transition: 0.5s;
+    border: 1px solid rgb(31, 27, 27);
+    border-radius: 10px;
+    background-color: rgb(31, 27, 27);
+    box-shadow: black 1px 1px 5px;
+    cursor: pointer;
+}
+img {
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.reveal {
+    visibility: visible;
+}
+.ondermain img {
+    border-radius: 10px;
+}
+.goed {
+    background-color: green;
+    border: 1px solid green;
+}
+.disabled {
+    pointer-events: none;
+    cursor: unset;
+}
+.winner {
+    border-color: green;
+
+}
+#kansen {
+    color: #4F5D73;
+}
+@media only screen and (max-width: 700px) {
+    main {
+        height: 70vh;
+        overflow: hidden;
+    }
+    .ondermain {
+        height: 100%;
+    }   
+}
+@media only screen and (max-width: 701px) {
+    .game {
+        display: none;
+    }
+    .sorry {
+        display: block;
+    }
+    .sorry p {
+        position: relative;
+        top: -300px;
+        align-items: center;
+    }
+    footer {
+        position: relative;
+        bottom: -63px;
+    }
+}
+@media only screen and (max-height: 650px) {
+    body {
+        height: 100px;
+    }
+    .game {
+        display: none !important;
+    }
+    .sorry {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .sorry h1 {
+        color: #4F5D73;
+        font-size: 25pt;
+    }
+    .sorry h1{
+        position: relative;
+    }
+}
+@media only screen and (max-height: 5000px) {
+    .sorry {
+        position: absolute;
+        top: 500px;
+    }
+}
+@media only screen and (max-height: 1000px) {
+    body {
+        height: 1000px;
+    }
+    .game {
+        height: 1100px;
+        top: 50px;
+    }
+    footer {
+        position: absolute;
+        bottom: -200px;
+    }
+}
+@media only screen and (max-height: 950px) {
+    footer {
+        bottom: -250px;
+    }  
+}
+@media only screen and (max-height: 900px) {
+    .game {
+        height: 1200px;
+        padding-top: 100px;
+        top: 0px;
+    }
+    main {
+        height: 1000xp;
+    }
+    body {
+        height: 1000px;
+    }
+    footer {
+        margin-top: 0px;
+        bottom: -350px;
+    }
+}
+@media only screen and (max-height: 850px) {
+    footer {
+        bottom: -400px;
+    }
+}
+@media only screen and (max-height: 800px) {
+    footer {
+        bottom: -450px;
+    }
+}
+@media only screen and (max-height: 750px) {
+    footer {
+        bottom: -500px
+    }
+}
+@media only screen and (max-height: 700px) {
+    footer {
+        bottom: -550px
+    }
+}
+@media only screen and (max-width: 3000px) {
+    footer {
+        position: relative;
+    }
+}

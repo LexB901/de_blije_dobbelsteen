@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"content="text/html;charset=UTF-8">
+    <title>Memory De Blije Dobbelsteen</title>
+    <link rel="stylesheet" href="styles/homestyles.css">
+    <link rel="stylesheet" href="styles/animaties.css">
+    <link rel="stylesheet" href="styles/memory.css">
+    <script src="script/memory.js"></script>
+    <script src="script/cookies.js"></script>
+    <link rel="stylesheet" href="styles/hamburgerstyle.css">
+    <link rel="stylesheet" href="styles/memory.css">
+    <link rel="icon" href="images/blije_dobbelsteen_logo.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div onclick="menu()" id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <div class="navbar" id="navbar">
+            <a class="navknop" href="index.html">Home<br></a>
+            <a class="navknop" href="about.html">Wie zijn wij</a>
+            <a class="logodobbelsteen" href="">
+                <div></div>
+                <img src="images/dobbelsteen_achtergrond.png" alt="">
+            </a>
+            <a class="navknop" href="rules.html">Spelregels</a>
+            <a class="navknop" href="contact.html">Contact</a>
+        </div>
+    </header>
+        <main>
+            <div class="banner">
+                <h1>Memory</h1>
+            </div>
+            <div class="ondermain">
+                <div class="sorry">
+                    <h1>Sorry!</h1><br>
+                    <p>Dit spel is niet beschikbaar op dit apparaat.</p>
+                </div>
+               
+                <div class="game">
+                    <div class="knoppen">
+                        <button class="knop" onclick="begin(16, 16, 1);check(16, 16, 0, 1)">Level 1</button>
+                        <button class="rip knop" id="twee" onclick="begin(16, 12, 2);check(16, 12, 0, 2)">Level 2</button>
+                        <button class="rip knop" id="drie" onclick="begin(36, 30, 3);check(36, 30, 0, 3)">Level 3</button>
+                        <button class="rip knop" id="vier" onclick="begin(16, 8, 4);check(16, 8, 0, 4)">Level 4</button>
+                        <button class="rip knop" id="vijf" onclick="begin(36, 20, 5);check(36, 20, 0, 5)">Level 5</button>
+                        <button class="rip knop" id="zes" onclick="begin(36, 15, 6);check(36, 15, 0, 6)">Level 6</button>
+                        <button class="reset" onclick="reset()">Reset</button>
+                    </div>
+                    <p id="memtitel"></p>
+                    <div id="memcontainer"></div>
+                    <div id="kansen"></div>
+                    <script>begin(16, 16 , 1);check(16, 16 ,0, 1)</script>
+                </div>
+            </div>
+        </main>
+    <footer>
+            <div class="footerinh">
+                <h2>DE BLIJE DOBBELSTEEN</h2>
+                <p>Nederlandse spellenfabriek al meer dan 75 jaar lang!!</p>
+            </div>
+            <div class="footerinh">
+                <h2>BEZOEKADRES</h2>
+                <a target="_blank" href="https://www.google.nl/maps/place/Westfrankelandsestraat+9,+3117+AJ+Schiedam/@51.9154123,4.3913083,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4356bcee42dd5:0x12c14aaaf4a9a111!8m2!3d51.9154123!4d4.393497">Westfrankelandsestraat 9c <br> 3117 AJ Schiedam</a>
+            </div>
+            <div class="footerinh">
+                <h2>POSTADRES</h2>
+                <a target="_blank" href="https://www.google.nl/maps/place/Westfrankelandsestraat+9,+3117+AJ+Schiedam/@51.9154123,4.3913083,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4356bcee42dd5:0x12c14aaaf4a9a111!8m2!3d51.9154123!4d4.393497">Westfrankelandsestraat 9c <br> 3117 AJ Schiedam</a>
+            </div>
+            <div class="footerinh">
+                <h2>CONTACT</h2>
+                <p>T: 010-226 00 94 <br> M: 06-24 48 58 21</p>
+                <a href="mailto:someone@example.com">E: info@deblijedobbelsteen.nl</a>
+            </div>
+    </footer>
+    <script  src="script/hamburgerscript.js"></script>
+</body>
+</html>
+<!--<script src="script/memory.js"></script>
+    <link rel="stylesheet" href="styles/memory.css">
+    <div class="game">
+        <div class="knoppen">
+            <button onclick="begin(16, 15, 1);check(16, 15, 0)">Level 1</button>
+            <button class="disabled rip" onclick="begin(16, 8, 2);check(16, 8, 0)">Level 2</button>
+            <button class="disabled rip" onclick="begin(36, 15, 3);check(36, 15, 0)">Level 3</button>
+            <button class="disabled rip" onclick="begin(16, 5, 4);check(16, 5, 0)">Level 4</button>
+            <button class="disabled rip" onclick="begin(36, 10, 5);check(36, 10, 0)">Level 5</button>
+            <button class="disabled rip" onclick="begin(36, 6, 6);check(36, 6, 0)">Level 6</button>
+        </div>
+        <p id="memtitel"></p>
+        <div id="memcontainer"></div>
+        <div id="kansen"></div>
+    </div>
+    <script>begin(16, 15 , 1);check(16, 15 ,0)</script> -->
